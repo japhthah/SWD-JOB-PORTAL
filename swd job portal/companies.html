@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Explore Companies — SWD Resume Job Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="companies-page">
+
+  <!-- DO NOT CHANGE HEADER / NAV -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="logo" href="home.html">SWD Resume Job Portal</a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="jobs.html">Jobs</a></li>
+          <li><a href="companies.html" aria-current="page">Companies</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- END NAV -->
+
+  <main id="main">
+
+    <!-- HERO / INTRO -->
+    <section class="companies-hero">
+      <div class="container">
+        <h1>Trusted Companies Hiring Talent</h1>
+        <p>
+          Explore verified organizations actively recruiting professionals across
+          technology, healthcare, finance, education, and more.
+        </p>
+
+        <!-- SEARCH & FILTERS -->
+        <form class="search-filters" role="search" aria-label="Search companies">
+          <input
+            id="search-input"
+            name="q"
+            type="search"
+            placeholder="Search company name"
+            aria-label="Search by company name">
+
+          <select id="industry-filter" aria-label="Industry">
+            <option value="">All Industries</option>
+            <option>Information Technology</option>
+            <option>Healthcare</option>
+            <option>Finance</option>
+            <option>Education</option>
+            <option>Food & Beverage</option>
+          </select>
+
+          <select id="location-filter" aria-label="Location">
+            <option value="">All Locations</option>
+            <option>Lagos, Nigeria</option>
+            <option>Abuja, Nigeria</option>
+            <option>Port Harcourt, Nigeria</option>
+            <option>Remote</option>
+          </select>
+        </form>
+      </div>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <section class="container companies-layout">
+
+      <!-- COMPANIES DIRECTORY -->
+      <section class="companies-directory" aria-labelledby="companies-heading">
+        <header class="section-header">
+          <h2 id="companies-heading">Company Directory</h2>
+          <p>Browse organizations and view available roles</p>
+        </header>
+
+        <div class="companies-grid" id="companies-grid">
+
+          <!-- COMPANY CARD -->
+          <article class="company-card">
+            <div class="company-logo">
+              <img src="/img/tech.png" alt="TechNova Solutions logo">
+            </div>
+
+            <div class="company-info">
+              <h3>TechNova Solutions</h3>
+              <p class="company-meta">Information Technology • Lagos, Nigeria</p>
+              <p class="company-desc">
+                Enterprise software company delivering scalable digital solutions
+                for modern businesses.
+              </p>
+
+              <div class="company-stats">
+                <span>Founded 2016</span>
+                <span>51–200 Employees</span>
+                <span>3 Open Roles</span>
+              </div>
+
+              <div class="company-actions">
+                <button class="btn btn--primary">View Profile</button>
+                <a href="jobs.html" class="btn btn--secondary">View Jobs</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- COMPANY CARD -->
+          <article class="company-card">
+            <div class="company-logo">
+              <img src="/img/greenleaf.jpg" alt="GreenLeaf Health logo">
+            </div>
+
+            <div class="company-info">
+              <h3>GreenLeaf Health</h3>
+              <p class="company-meta">Healthcare • Abuja, Nigeria</p>
+              <p class="company-desc">
+                Digital healthcare platforms supporting clinics with telemedicine
+                and patient management solutions.
+              </p>
+
+              <div class="company-stats">
+                <span>Healthcare Tech</span>
+                <span>1 Open Role</span>
+              </div>
+
+              <div class="company-actions">
+                <button class="btn btn--primary">View Profile</button>
+                <a href="jobs.html" class="btn btn--secondary">View Jobs</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- COMPANY CARD -->
+          <article class="company-card">
+            <div class="company-logo">
+              <img src="/img/steller.jpg" alt="Stellar Finance logo">
+            </div>
+
+            <div class="company-info">
+              <h3>Stellar Finance</h3>
+              <p class="company-meta">Finance • Lagos, Nigeria</p>
+              <p class="company-desc">
+                Fintech company providing payroll automation and small-business
+                lending solutions.
+              </p>
+
+              <div class="company-stats">
+                <span>Fintech</span>
+                <span>2 Open Roles</span>
+              </div>
+
+              <div class="company-actions">
+                <button class="btn btn--primary">View Profile</button>
+                <a href="jobs.html" class="btn btn--secondary">View Jobs</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- PAGINATION -->
+        <nav class="pagination" aria-label="Company pagination">
+          <button class="page-btn" aria-current="page">1</button>
+          <button class="page-btn">2</button>
+          <button class="page-btn">Next</button>
+        </nav>
+
+      </section>
+
+      <!-- COMPANY PROFILE PANEL -->
+      <aside class="company-profile" role="region" aria-labelledby="profile-title">
+        <header class="profile-header">
+          <img src="/img/tech.png" alt="TechNova Solutions logo">
+          <div>
+            <h2 id="profile-title">TechNova Solutions</h2>
+            <p>Information Technology • Lagos, Nigeria</p>
+            <a href="#" class="company-link">www.technova.example</a>
+          </div>
+        </header>
+
+        <section class="profile-section">
+          <h3>About the Company</h3>
+          <p>
+            TechNova Solutions is a fast-growing technology firm focused on building
+            secure, scalable, and user-friendly digital products for global clients.
+          </p>
+        </section>
+
+        <section class="profile-section">
+          <h3>Company Details</h3>
+          <ul>
+            <li><strong>Founded:</strong> 2016</li>
+            <li><strong>Company Size:</strong> 51–200 Employees</li>
+            <li><strong>Email:</strong> careers@technova.example</li>
+          </ul>
+        </section>
+
+        <section class="profile-section">
+          <h3>Open Positions</h3>
+          <ul class="open-roles">
+            <li>
+              <span>Frontend Developer — Lagos</span>
+              <button class="btn btn--secondary">Apply</button>
+            </li>
+            <li>
+              <span>Product Designer — Remote</span>
+              <button class="btn btn--secondary">Apply</button>
+            </li>
+            <li>
+              <span>DevOps Engineer — Lagos</span>
+              <button class="btn btn--secondary">Apply</button>
+            </li>
+          </ul>
+        </section>
+      </aside>
+
+    </section>
+
+    <footer class="site-footer">
+      <small>
+        Applications are reviewed on a rolling basis. Only shortlisted candidates
+        will be contacted.
+      </small>
+    </footer>
+
+  </main>
+
+</body>
+</html>

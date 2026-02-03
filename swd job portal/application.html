@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Job Portal — Find Your Dream Job</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="home.html"> SWD Resume job portal</a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="/home.html">Home</a></li>
+          <li><a href="/jobs.html">Jobs</a></li>
+          <li><a href="/companies.html">Companies</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+          <li class="user-menu nav-item">
+            <button class="dropdown-toggle" aria-expanded="false" aria-haspopup="true" aria-controls="user-menu" aria-label="User menu">
+              <i class="fa-regular fa-user"></i>
+            </button>
+            <div class="dropdown-menu" id="user-menu" role="menu" aria-hidden="true">
+              <a href="/dashboard.html" role="menuitem">Dashboard</a>
+              <a href="/profile.html" role="menuitem">Profile</a>
+              <a href="/application.html" role="menuitem">My Applications</a>
+              <div class="dropdown-separator" role="separator" aria-hidden="true"></div>
+              <button type="button" class="dropdown-item logout" role="menuitem">Logout</button>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" role="main">
+    <section class="my-apps" aria-labelledby="apps-title" style="padding:40px 0;">
+      <h1 id="apps-title">My Applications</h1>
+      <p class="muted">View the status of positions you've applied to.</p>
+
+      <div class="apps-list" style="margin-top:18px;display:grid;gap:14px">
+        <!-- Example application card -->
+        <article class="job-card">
+          <div class="company-logo">AC</div>
+          <div class="job-info">
+            <h3 class="job-title">Frontend Developer</h3>
+            <p class="job-meta">Acme Corp — New York, NY</p>
+            <p class="muted">Status: <strong>Interview</strong></p>
+          </div>
+          <a class="btn btn-outline" href="#">View</a>
+        </article>
+
+        <!-- Empty state (shown when no apps) -->
+        <div class="empty-state muted" style="padding:24px;background:rgba(255,255,255,0.04);border-radius:10px;text-align:center">
+          You have no applications yet. <a href="jobs.html">Browse jobs</a> to start applying.
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-links">
+        <a href="/about.html">About</a>
+        <a href="#privacy">Privacy</a>
+        <a href="#terms">Terms</a>
+        <a href="/contact.html">Contact</a>
+      </div>
+      <div class="social">
+        <a href="#" aria-label="Twitter" class="social-icon">🐦</a>
+        <a href="#" aria-label="LinkedIn" class="social-icon">💼</a>
+        <a href="#" aria-label="GitHub" class="social-icon">🔗</a>
+      </div>
+    </div>
+    <div class="copyright">© <span id="year">2026</span> JobPortal. All rights reserved.</div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

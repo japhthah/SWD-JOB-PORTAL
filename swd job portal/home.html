@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Job Portal — Find Your Dream Job</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="home.html"> SWD Resume job portal</a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="/home.html">Home</a></li>
+          <li><a href="/jobs.html">Jobs</a></li>
+          <li><a href="/companies.html">Companies</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+          <li class="user-menu nav-item">
+            <button class="dropdown-toggle" aria-expanded="false" aria-haspopup="true" aria-controls="user-menu" aria-label="User menu">
+              <i class="fa-regular fa-user"></i>
+            </button>
+            <div class="dropdown-menu" id="user-menu" role="menu" aria-hidden="true">
+              <a href="/dashboard.html" role="menuitem">Dashboard</a>
+              <a href="/profile.html" role="menuitem">Profile</a>
+              <a href="/application.html" role="menuitem">My Applications</a>
+              <div class="dropdown-separator" role="separator" aria-hidden="true"></div>
+              <button type="button" class="dropdown-item logout" role="menuitem">Logout</button>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+    <section class="hero">
+      <div class="hero-inner container">
+        <h1 class="hero-title">Find Your Dream Job</h1>
+        <p class="hero-sub">Explore thousands of opportunities worldwide</p>
+        <a class="btn btn-primary" href="#search">Get Started</a>
+      </div>
+    </section>
+
+    <section id="search" class="search-bar container">
+      <form class="search-form" action="#" method="get" aria-label="Job search">
+        <label class="sr-only" for="title">Job title or keyword</label>
+        <input id="title" name="q" type="text" placeholder="Job title or keyword" />
+
+        <label class="sr-only" for="location">Location</label>
+        <input id="location" name="location" type="text" placeholder="Location" />
+
+        <button class="btn btn-search" type="submit">Search</button>
+      </form>
+    </section>
+
+    <section id="jobs" class="featured-jobs container">
+      <div class="section-heading">
+        <h2>Featured Jobs</h2>
+        <p class="muted">Handpicked opportunities you don't want to miss</p>
+      </div>
+      <div class="job-grid">
+        <!-- Example job card -->
+        <article class="job-card">
+          <div class="company-logo">AB</div>
+          <div class="job-info">
+            <h3 class="job-title">Frontend Developer</h3>
+            <p class="job-meta">Acme Corp — New York, NY</p>
+          </div>
+          <a class="btn btn-outline" href="#">Apply</a>
+        </article>
+
+        <article class="job-card">
+          <div class="company-logo">DX</div>
+          <div class="job-info">
+            <h3 class="job-title">UX/UI Designer</h3>
+            <p class="job-meta">DesignLab — Remote</p>
+          </div>
+          <a class="btn btn-outline" href="#">Apply</a>
+        </article>
+
+        <article class="job-card">
+          <div class="company-logo">LT</div>
+          <div class="job-info">
+            <h3 class="job-title">Backend Engineer</h3>
+            <p class="job-meta">LogicTree — San Francisco, CA</p>
+          </div>
+          <a class="btn btn-outline" href="#">Apply</a>
+        </article>
+
+        <article class="job-card">
+          <div class="company-logo">SI</div>
+          <div class="job-info">
+            <h3 class="job-title">Data Scientist</h3>
+            <p class="job-meta">StatInsight — Boston, MA</p>
+          </div>
+          <a class="btn btn-outline" href="#">Apply</a>
+        </article>
+
+        <article class="job-card">
+          <div class="company-logo">MR</div>
+          <div class="job-info">
+            <h3 class="job-title">Product Manager</h3>
+            <p class="job-meta">MarketRise — London, UK</p>
+          </div>
+          <a class="btn btn-outline" href="#">Apply</a>
+        </article>
+
+        <article class="job-card">
+          <div class="company-logo">HN</div>
+          <div class="job-info">
+            <h3 class="job-title">DevOps Engineer</h3>
+            <p class="job-meta">HostNow — Remote</p>
+          </div>
+          <a class="btn btn-outline" href="#">Apply</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="companies" class="top-companies">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Top Companies</h2>
+          <p class="muted">Trusted by teams around the world</p>
+        </div>
+        <div class="companies-list" aria-label="Top companies">
+          <div class="company" title="Google">Google</div>
+          <div class="company" title="Meta">Meta</div>
+          <div class="company" title="Microsoft">Microsoft</div>
+          <div class="company" title="Amazon">Amazon</div>
+          <div class="company" title="Netflix">Netflix</div>
+          <div class="company" title="Stripe">Stripe</div>
+          <div class="company" title="GitHub">GitHub</div>
+          <div class="company" title="Flutterwave">Flutterwave</div>
+          <div class="company" title="Paystack">Paystack</div>
+          <div class="company" title="Interswitch">Interswitch</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-links">
+        <a href="/about.html">About</a>
+        <a href="#privacy">Privacy</a>
+        <a href="#terms">Terms</a>
+        <a href="/contact.html">Contact</a>
+      </div>
+      <div class="social">
+        <a href="#" aria-label="Twitter" class="social-icon">🐦</a>
+        <a href="#" aria-label="LinkedIn" class="social-icon">💼</a>
+        <a href="#" aria-label="GitHub" class="social-icon">🔗</a>
+      </div>
+    </div>
+    <div class="copyright">© <span id="year">2026</span> JobPortal. All rights reserved.</div>
+  </footer>
+  <script src="script.js" defer></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>

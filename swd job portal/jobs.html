@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Job Portal — Find Your Dream Job</title>
+  <!-- Using system font stack and external stylesheet for the Job Details page -->
+  <meta name="color-scheme" content="light dark">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="job-page">
+  <!-- Site header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="home.html">SWD Resume Job Portal</a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="jobs.html" aria-current="page">Jobs</a></li>
+          <li><a href="companies.html">Companies</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" id="main">
+    <!-- Page header -->
+    <div class="page-header">
+      <h1 class="page-title">Job Details</h1>
+      <p class="breadcrumb" aria-hidden="true">Home / Jobs / Job Details</p>
+    </div>
+
+    <!-- Polite live region for status messages (screen-reader only) -->
+    <div id="job-status" role="status" aria-live="polite" class="sr-only" aria-atomic="true"></div> 
+
+    <div class="job-wrapper">
+      <!-- Left column: Job content -->
+      <section class="card" aria-labelledby="job-title">
+        <!-- Job Overview Card -->
+        <div class="job-overview" role="region" aria-labelledby="job-title">
+          <div>
+            <h2 id="job-title" class="job-title">Frontend Developer</h2>
+            <p class="company">TechNova Solutions</p>
+            <div class="job-meta" aria-hidden="true">
+              <span class="meta-item">Remote / Lagos, Nigeria</span>
+              <span class="meta-item">Full-time</span>
+              <span class="meta-item">Posted 3 days ago</span>
+            </div>
+          </div>
+          <div class="job-actions" aria-hidden="true">
+            <div style="text-align:right;font-size:0.95rem;color:var(--muted)">
+              <div>Salary</div>
+              <div style="font-weight:700">₦250,000 – ₦400,000 monthly</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Job Meta Information Section -->
+        <div class="meta-grid section" aria-labelledby="meta-heading">
+          <div class="meta-block" role="group" aria-labelledby="meta1">
+            <div id="meta1" class="meta-label">Experience Level</div>
+            <div class="meta-value">Mid-level</div>
+          </div>
+          <div class="meta-block" role="group" aria-labelledby="meta2">
+            <div id="meta2" class="meta-label">Industry</div>
+            <div class="meta-value">Information Technology</div>
+          </div>
+          <div class="meta-block" role="group" aria-labelledby="meta3">
+            <div id="meta3" class="meta-label">Application Deadline</div>
+            <div class="meta-value">30 June 2026</div>
+          </div>
+          <div class="meta-block" role="group" aria-labelledby="meta4">
+            <div id="meta4" class="meta-label">Salary</div>
+            <div class="meta-value">₦250,000 – ₦400,000 monthly</div>
+          </div>
+        </div>
+
+        <!-- Job Description Section -->
+        <section class="section" aria-labelledby="desc-heading">
+          <h2 id="desc-heading">Job Description</h2>
+          <p class="lead">We are looking for a skilled and motivated Frontend Developer to join our growing team. You will be responsible for building user-friendly web interfaces and ensuring excellent user experience across our platform.</p>
+        </section>
+
+        <!-- Responsibilities Section -->
+        <section class="section" aria-labelledby="resp-heading">
+          <h2 id="resp-heading">Key Responsibilities</h2>
+          <ul class="custom-list" aria-describedby="resp-heading">
+            <li>Develop responsive and interactive user interfaces</li>
+            <li>Collaborate with backend developers and designers</li>
+            <li>Optimize applications for maximum speed and scalability</li>
+            <li>Maintain and improve existing codebase</li>
+            <li>Ensure cross-browser compatibility</li>
+          </ul>
+        </section>
+
+        <!-- Requirements Section -->
+        <section class="section" aria-labelledby="req-heading">
+          <h2 id="req-heading">Job Requirements</h2>
+          <ul class="custom-list">
+            <li>Proven experience as a Frontend Developer</li>
+            <li>Strong knowledge of HTML, CSS, and JavaScript</li>
+            <li>Familiarity with modern frameworks</li>
+            <li>Good problem-solving skills</li>
+            <li>Ability to work independently and in a team</li>
+          </ul>
+        </section>
+
+        <!-- Preferred Qualifications Section (optional) -->
+        <section class="section" aria-labelledby="pref-heading">
+          <h2 id="pref-heading">Preferred Qualifications</h2>
+          <ul class="custom-list">
+            <li>Bachelors degree in Computer Science or related field</li>
+            <li>Experience with job portals or large web applications</li>
+            <li>Understanding of accessibility standards</li>
+          </ul>
+        </section>
+
+        <!-- Call-To-Action Section -->
+        <section class="section" aria-labelledby="apply-heading">
+          <h2 id="apply-heading">Apply for this job</h2>
+          <div class="cta">
+            <div class="login-notice" id="login-notice" aria-hidden="true">
+              <p style="margin:0">You must be logged in to apply for this job</p>
+              <div style="margin-top:8px;display:flex;gap:8px;flex-wrap:wrap">
+                <button class="btn btn-primary" id="login-to-apply-btn" type="button">Login to Apply</button>
+                <button class="btn btn-secondary" id="create-account-btn" type="button">Create an Account</button>
+              </div>
+            </div>
+
+            <div class="btn-group" aria-hidden="false">
+              <button class="btn btn-primary" type="button" id="apply-btn">Apply Now</button>
+              <button class="btn btn-secondary" type="button" id="save-btn" aria-pressed="false">Save Job</button>
+            </div> 
+          </div>
+        </section>
+      </section>
+
+      <!-- Right column: Employer Info -->
+      <aside class="card" aria-labelledby="company-heading">
+        <h2 id="company-heading">About the Company</h2>
+        <div class="company-box">
+          <p style="margin:0">TechNova Solutions is a fast-growing technology company focused on building innovative digital products for businesses worldwide.</p>
+        </div>
+
+        <div class="section" style="margin-top:16px">
+          <h2 style="margin:0 0 8px;font-size:0.95rem">Additional Info</h2>
+          <p style="margin:0;color:var(--muted)">Applications are reviewed on a rolling basis. Only shortlisted candidates will be contacted.</p>
+        </div>
+      </aside>
+    </div>
+
+    <!-- Footer microcopy -->
+    <footer aria-labelledby="footer-note">
+      <small id="footer-note">Applications are reviewed on a rolling basis • Only shortlisted candidates will be contacted</small>
+    </footer>
+  </main>
+
+  <!-- Keep any theme or site scripts below (no interactive JS added yet) -->
+  <script src="script.js" defer></script>
+</body>
+</html>

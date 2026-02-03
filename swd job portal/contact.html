@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Job Portal — Find Your Dream Job</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="home.html"> SWD Resume job portal</a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="/home.html">Home</a></li>
+          <li><a href="/jobs.html">Jobs</a></li>
+          <li><a href="/companies.html">Companies</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+          <li class="user-menu nav-item">
+            <button class="dropdown-toggle" aria-expanded="false" aria-haspopup="true" aria-controls="user-menu" aria-label="User menu">
+              <i class="fa-regular fa-user"></i>
+            </button>
+            <div class="dropdown-menu" id="user-menu" role="menu" aria-hidden="true">
+              <a href="/dashboard.html" role="menuitem">Dashboard</a>
+              <a href="/profile.html" role="menuitem">Profile</a>
+              <a href="/application.html" role="menuitem">My Applications</a>
+              <div class="dropdown-separator" role="separator" aria-hidden="true"></div>
+              <button type="button" class="dropdown-item logout" role="menuitem">Logout</button>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
